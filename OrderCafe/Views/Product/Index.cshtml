@@ -1,0 +1,22 @@
+﻿@model IEnumerable<OrderCafe.Models.Product>
+
+@{
+    ViewBag.Title = "Menu";
+    Layout = "~/Views/Shared/_MasterLayout.cshtml";
+}
+
+<h2 class="mb-3">@ViewBag.Title</h2>
+
+@if (!Model.Any())
+{
+    <div class="alert alert-warning">Chưa có thể loại này</div>
+}
+else
+{
+    <div class="row">
+        @foreach (var item in Model)
+        {
+            @Html.Partial("_ProductItem", item)
+        }
+    </div>
+}

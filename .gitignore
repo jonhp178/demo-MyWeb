@@ -1,0 +1,11 @@
+# Local Visual Studio state and generated build output
+.vs/
+[Bb]in/
+[Oo]bj/
+*.csproj.user
+*.suo
+# NuGet packages are restored from OrderCafe/packages.config
+[Pp]ackages/
+
+# Per-user solution settings
+*.sln.docstates
